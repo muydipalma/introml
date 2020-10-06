@@ -1,8 +1,8 @@
 # Por que necesitamos Algebra Lineal en Machine Learning?
 
-Bienvenido al maravilloso mundo del machine learning! Antes de ponerse comodos veamos algunos ejemplos donde se nos manifiesta la necesidad de usar elementos del algebra lineal, como vectores, matrices y tranformaciones lineales:
+Bienvenido al maravilloso mundo del machine learning! Antes de ponernos comodos veamos algunos ejemplos donde se nos manifiesta la necesidad de usar elementos del algebra lineal, como vectores, matrices y tranformaciones lineales:
 
-* Dataset and Data Files
+* Datasets
 * Images and Photographs
 * One-Hot Encoding
 * Linear Regression
@@ -12,41 +12,35 @@ Bienvenido al maravilloso mundo del machine learning! Antes de ponerse comodos v
 * Recommender Systems
 * Deep Learning
 
-### Dataset and Data Files
+### Datasets 
 
-In machine learning, you fit a model on a dataset.
+La idea central de machine learning, es ajustar un modelo a un set de datos (dataset) de manera de poder predecir alguna variable (target) en funcion de otras variables explicativas (features). Para esto es necesario ordenar los datos en una tabla donde cada fila represente una observacion y que cada columna sea una feature que represente nuestra obvservacion.
 
-This is the table-like set of numbers where each row represents an observation and each column represents a feature of the observation.
 
-For example, below is a snippet of the Iris flowers dataset:
+Por ejemplo, imaginemos que queremos entrenar un modelo que nos permite predecir las ventas de un producto en funcion de la inversion que se hace en publicidad, nuestras columnas de caracteristicas seran los 3 tipos de medio de comunicacion. Television, radio y periodicos seran las features y Sales el target. Cada observacion sera un mes de los gastos. El dataset original tiene el registro de los ultimos 200 meses, aca vemos solo los ultimos 4:
 
 ```
-5.1,3.5,1.4,0.2,Iris-setosa
-4.9,3.0,1.4,0.2,Iris-setosa
-4.7,3.2,1.3,0.2,Iris-setosa
-4.6,3.1,1.5,0.2,Iris-setosa
-5.0,3.6,1.4,0.2,Iris-setosa
+TV,Radio,Newspaper,Sales
+230.1,37.8,69.2,22.1
+44.5,39.3,45.1,10.4
+17.2,45.9,69.3,9.3
+151.5,41.3,58.5,18.5
 ```
 
-This data is in fact a matrix: a key data structure in linear algebra.
-
-Further, when you split the data into inputs and outputs to fit a supervised machine learning model, such as the measurements and the flower species, you have a **matrix** (X) and a **vector** (y). The vector is another key data structure in linear algebra.
-
-Each row has the same length, i.e. the same number of columns, therefore we can say that the data is vectorized where rows can be provided to a model one at a time or in a batch and the model can be pre-configured to expect rows of a fixed width.
+Esto en realidad es una _matriz_, una estructura basica del algebra lineal. Es mas, cuando uno parte el data set en features y target, lo que hace es tener una _matriz_ (X) y un  a _vector_ target (y). Un vector es otro elemento fundamental del algebra lineal.
 
 
+Cada final tiene la misma longitud, esto es el mismo numero de columnas, por lo tanto decimos la que data fue vectoriazada y cada observacion nueva sera un vector o varios que serviran para predecir su variable target.
 
 
-### Images and Photographs
-Perhaps you are more used to working with images or photographs in computer vision applications.
+### Imagenes y video
 
-Each image that you work with is itself a table structure with a width and height and one pixel value in each cell for black and white images or 3 pixel values in each cell for a color image.
+Quizas uno ya trabaje con imagenes o este intersado en computer vision (machine learning para imagenes), para esto cada imagen puede ser pensada como una matriz (ancho x alto) donde cada lugar representa un pixel, y el valor que sera asignado tiene que ver con el color. Si la imagen fuera en blanco y negro, el valor sera en escala de grises. Pero si fuera una imagen en colores, en realidad tendriamos 3 matrices, una para cada color (RGB).
 
-A photo is yet another example of a **matrix** from linear algebra.
 
-Operations on the image, such as cropping, scaling, shearing, and so on are all described using the notation and operations of linear algebra.
+Asi, una imagen no es mas que otro ejemplo de el uso de una _matriz_. Entonces cualquier operacion que querramos hacer con imagenes (cropping, scaling, shearing), necesariamente nos obliga a conocer la notacion y las operaciones con matrices. 
 
-### One Hot Encoding
+### Variables categoricas
 
 Sometimes you work with categorical data in machine learning.
 
@@ -76,7 +70,7 @@ red, green, blue
 
 Each row is encoded as a binary **vector**, a vector with zero or one values and this is an example of a **sparse representation**, a whole sub-field of linear algebra.
 
-### Linear Regression
+### Regresion Lineal
 
 Linear regression is an old method from statistics for describing the relationships between variables.
 
@@ -94,7 +88,7 @@ y = A . b
 
 Where y is the output variable A is the dataset and b are the model coefficients.
 
-### Regularization
+### Regularizacion
 
 In applied machine learning, we often seek the simplest possible models that achieve the best skill on our problem.
 
@@ -106,7 +100,7 @@ A technique that is often used to encourage a model to minimize the size of coef
 
 Both of these forms of regularization are in fact a measure of the magnitude or length of the coefficients as a vector and are methods lifted directly from linear algebra called the **vector norm**.
 
-### Principal Component Analysis
+### PCA y dimensionalidad
 
 Often, a dataset has many columns, perhaps tens, hundreds, thousands, or more.
 
@@ -130,7 +124,7 @@ This is a sparse matrix representation of the text. **Matrix factorization** met
 
 This form of data preparation is called Latent Semantic Analysis, or LSA for short, and is also known by the name Latent Semantic Indexing, or LSI.
 
-### Recommender Systems
+### Sistemas de recomendacion
 
 Predictive modeling problems that involve the recommendation of products are called recommender systems, a sub-field of machine learning.
 
