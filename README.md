@@ -161,17 +161,20 @@ Linear algebra is central to the description of deep learning methods via matrix
 
 ## Resumiendo:
 
-Imagino que despues de todos estos ejemplos, estan convencidos de lo necesario que es saber algebra lineal. El lenguaje basico detras de todas las ideas de machine learning son los vectores matricas y transformaciones lineales. Sin esto, todo sera chino basico.
+Imagino que despues de todos estos ejemplos, estan convencidos de lo necesario que es saber algebra lineal. El lenguaje basico detras de todas las ideas de machine learning son los vectores matricas y transformaciones lineales. Sin esto, es muy dificil y menos provechosa cualquier texto o clase de ML. 
 
 
-```python
 
-```
+
 
 # Fundamentos de Algebra Lineal
 
+A continuacion vamos a repasar y jugar con algunos conceptos que se muestran en la maravillosa [serie](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
+de videos del canal [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw)
 
-[playlist con todos los videos](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fNk_zzaMoSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+# Vectores
+
+<iframe width="600" height="480" src="https://www.youtube.com/embed/fNk_zzaMoSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
