@@ -1,15 +1,15 @@
 # Por que necesitamos Algebra Lineal en Machine Learning?
 
-Bienvenido al maravilloso mundo del machine learning! Antes de ponernos comodos veamos algunos ejemplos donde se nos manifiesta la necesidad de usar elementos del algebra lineal, como vectores, matrices y tranformaciones lineales:
+Bienvenido al maravilloso mundo del machine learning! Antes de ponernos comodos veamos algunos ejemplos incomodos donde se nos manifiesta la necesidad de usar elementos del algebra lineal como: vectores, matrices, tranformaciones lineales, etc:
 
 * Datasets
-* Images and Photographs
-* One-Hot Encoding
-* Linear Regression
-* Regularization
-* Principal Component Analysis
+* Imagenes y video
+* Variables categoricas
+* Regresion Lineal 
+* Regularizacion
+* PCA y dimensionalidad
 * Latent Semantic Analysis
-* Recommender Systems
+* Sistemas de recomendacion
 * Deep Learning
 
 ### Datasets 
@@ -27,7 +27,7 @@ TV,Radio,Newspaper,Sales
 151.5,41.3,58.5,18.5
 ```
 
-Esto en realidad es una _matriz_, una estructura basica del algebra lineal. Es mas, cuando uno parte el data set en features y target, lo que hace es tener una _matriz_ (X) y un  a _vector_ target (y). Un vector es otro elemento fundamental del algebra lineal.
+Esto en realidad es una **matriz**, una estructura basica del algebra lineal. Es mas, cuando uno parte el data set en features y target, lo que hace es tener una _matriz_ (X) y un  a **vector** target (y). Un vector es otro elemento fundamental del algebra lineal.
 
 
 Cada final tiene la misma longitud, esto es el mismo numero de columnas, por lo tanto decimos la que data fue vectoriazada y cada observacion nueva sera un vector o varios que serviran para predecir su variable target.
