@@ -1,4 +1,3 @@
 theme: jekyll-theme-leap-day
-page:
-  title: [Algebra Lineal y Machine Learning]
-  description: [Una breve descripcion de la necesidad de tener una minima base de algebra lineal, para poder encarar cualquier curso de machine learning.]
+title: [Algebra Lineal y Machine Learning]
+description: [Una breve descripcion de la necesidad de tener una minima base de algebra lineal, para poder encarar cualquier curso de machine learning.]
