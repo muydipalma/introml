@@ -44,8 +44,16 @@ Y un video? Podemos pensarlo como una sucesion de matrices, donde cada cuadro es
 
 ### Variables categoricas
 
-A veces tenemos sistemas donde algunas variables solo pueden tomar valores categoricos, por ejemplo:
+A veces tenemos sistemas donde algunas variables solo pueden tomar valores categoricos. Imaginen un dataset de un supermercado, nuesta, por ejemplo:
 
+```
+##   Customer ID Gender Marital Status Annual Income          City     Product Category Units Sold Revenue
+## 1        7223      F              S   $30K - $50K   Los Angeles          Snack Foods          5   27.38
+## 2        7841      M              M   $70K - $90K   Los Angeles           Vegetables          5   14.90
+## 3        8374      F              M   $50K - $70K     Bremerton          Snack Foods          3    5.52
+## 4        9619      M              M   $30K - $50K      Portland                Candy          4    4.44
+
+``` 
 
 
 
@@ -60,18 +68,6 @@ A one hot encoding is where a table is created to represent the variable with on
 For example, the color variable with the 3 rows:
 
 
-
-##   Customer ID Gender Marital Status Annual Income          City     Product Category Units Sold Revenue
-## 1        7223      F              S   $30K - $50K   Los Angeles          Snack Foods          5   27.38
-## 2        7841      M              M   $70K - $90K   Los Angeles           Vegetables          5   14.90
-## 3        8374      F              M   $50K - $70K     Bremerton          Snack Foods          3    5.52
-## 4        9619      M              M   $30K - $50K      Portland                Candy          4    4.44
-```
-red
-green
-blue
-...
-``` 
 
 Might be encoded as:
 ```
