@@ -38,9 +38,16 @@ Cada final tiene la misma longitud, esto es el mismo numero de columnas, por lo 
 Quizas uno ya trabaje con imagenes o este intersado en computer vision (machine learning para imagenes), para esto cada imagen puede ser pensada como una matriz (ancho x alto) donde cada lugar representa un pixel, y el valor que sera asignado tiene que ver con el color. Si la imagen fuera en blanco y negro, el valor sera en escala de grises. Pero si fuera una imagen en colores, en realidad tendriamos 3 matrices, una para cada color (RGB).
 
 
-Asi, una imagen no es mas que otro ejemplo de el uso de una _matriz_. Entonces cualquier operacion que querramos hacer con imagenes (cropping, scaling, shearing), necesariamente nos obliga a conocer la notacion y las operaciones con matrices. 
+Asi, una imagen no es mas que otro ejemplo de el uso de una _matriz_. Entonces cualquier operacion que querramos hacer con imagenes (cropping, scaling, shearing), necesariamente nos obliga a conocer la notacion y las operaciones con matrices.
+
+Y un video? Podemos pensarlo como una sucesion de matrices, donde cada cuadro es una matriz (en blanco y negro por ejemplo)... tambien llamado **tensor**. 
 
 ### Variables categoricas
+
+A veces tenemos sistemas donde algunas variables solo pueden tomar valores categoricos, por ejemplo:
+
+
+
 
 Sometimes you work with categorical data in machine learning.
 
@@ -52,6 +59,13 @@ A one hot encoding is where a table is created to represent the variable with on
 
 For example, the color variable with the 3 rows:
 
+
+
+##   Customer ID Gender Marital Status Annual Income          City     Product Category Units Sold Revenue
+## 1        7223      F              S   $30K - $50K   Los Angeles          Snack Foods          5   27.38
+## 2        7841      M              M   $70K - $90K   Los Angeles           Vegetables          5   14.90
+## 3        8374      F              M   $50K - $70K     Bremerton          Snack Foods          3    5.52
+## 4        9619      M              M   $30K - $50K      Portland                Candy          4    4.44
 ```
 red
 green
