@@ -44,14 +44,14 @@ Y un video? Podemos pensarlo como una sucesion de matrices, donde cada cuadro es
 
 ### Variables categoricas
 
-A veces tenemos sistemas donde algunas variables solo pueden tomar valores categoricos. Imaginen un dataset de un supermercado, nuesta, por ejemplo:
+A veces tenemos sistemas donde algunas variables solo pueden tomar valores categoricos. Imaginen un dataset con clientes de un supermercado por ejemplo:
 
 ```
-##   Customer ID Gender Marital Status Annual Income          City     Product Category Units Sold Revenue
-## 1        7223      F              S   $30K - $50K   Los Angeles          Snack Foods          5   27.38
-## 2        7841      M              M   $70K - $90K   Los Angeles           Vegetables          5   14.90
-## 3        8374      F              M   $50K - $70K     Bremerton          Snack Foods          3    5.52
-## 4        9619      M              M   $30K - $50K      Portland                Candy          4    4.44
+ID     Gender   Marital Status  Annual Income     City         Product Category       Units   Revenue 
+7223      F              S       $30K - $50K          CABA          Snack Foods          5     27.38 
+7841      M              M       $70K - $90K          CABA           Vegetables          5     14.90 
+8374      F              M       $50K - $70K          CABA          Snack Foods          3      5.52
+9619      M              M       $30K - $50K           MDQ                Candy          4      4.44
 
 ``` 
 
